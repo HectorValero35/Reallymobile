@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+    <script src="plan.js"></script>
    
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -49,7 +49,7 @@
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalPlanesPrepago">       
                     <img src="img/imagen-22.jpg" alt="Planes Prepago" width="300" height="300">
-                    <p><strong>Planes Prepago "500Mb Gratis"</strong></p>
+                    <p><strong>Planes Prepago "500Mb Gratis "Ingresar"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -85,9 +85,38 @@
             
 
         </div><br>
+        <!-- es para el formulario -->
+<div class="modal fade" id="myModalformulariodeplan">
+<div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content" style="margin:10%;">
+                    <div class="modal-header" style="border:none;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="slidermodal"  class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                         <form action="Consultaplan.php" method="get">
+                             <label for="">Déjanos tus datos para contactarte</label>
+                             <input type="text" class="form-control" value="" placeholder="Ingresa tu numero celular" name="Numero_de_celular">
+                             <input type="text" class="form-control" value="" placeholder="Ingresa tu Nombre" name="Nombre">
+                             <input type="text" class="form-control" value="" id="plan"  name="plan" disabled name="Tipo_de_plan">
+                             
+                             <br>
+                             <input  type="submit" value="Enviar" class= "btn btn-primary form-control" style="border-radius: 10px " >
+                         </form>   
+                        </div>                        
+                        <div class="caption">
+                             </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+</div>
 
         <!-- Modal Planes Prepago-->
-        <div id="myModalPlanesPrepago" class="modal fade" role="dialog">
+        <div id="myModalPlanesPrepago" class="modal fade" role="dialog" >
             <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content" style="margin:10%;">
@@ -95,16 +124,16 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <div id="slidermodal" class="carousel slide" data-ride="carousel">
+                        <div id="slidermodal"  class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-20.0.png" style="height:70% !important;" alt="Planes Prepago">
+                                    <div onclick="pasarplan('planUno')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-20.0.png"  style="height:70% !important;" alt="Planes Prepago">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail">
+                                    <div   class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-21.jpg" alt="Planes Prepago">
                                     </div>
                                 </div>
@@ -144,12 +173,12 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
+                                    <div onclick="pasarplan2('planTres')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-24.jpg" style="height:70% !important;" alt="Television Digital">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail">
+                                    <div class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen 25.jpg" alt="Television Digital">
                                     </div>
                                 </div>
