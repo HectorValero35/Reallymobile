@@ -202,8 +202,7 @@ function pasarplan11(plan) {
 
 </div>
 
-        <!-- Modal Planes Prepago-->
-        <div id="myModalPlanesPrepago" class="modal fade" role="dialog" >
+<div id="myModalPlanesPrepago" class="modal fade" role="dialog" >
             <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content" style="margin:10%;">
@@ -211,8 +210,9 @@ function pasarplan11(plan) {
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <div id="slidermodal"  class="carousel slide" data-ride="carousel">
+                        <div id="slidermodalTelevisionDigital" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
+                            
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
                                     <div data-dismiss="modal" onclick="pasarplan('Plan_2GB_Internet')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
@@ -224,18 +224,21 @@ function pasarplan11(plan) {
                                         <img src="img/imagen-44.jpg" alt="Planes Prepago">
                                     </div>
                                 </div>
+
                             </div>
+
                             <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#slidermodal" role="button" data-slide="prev">
+                            <a class="left carousel-control" href="#slidermodalTelevisionDigital" role="button" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="right carousel-control" href="#slidermodal" role="button" data-slide="next">
+                            <a class="right carousel-control" href="#slidermodalTelevisionDigital" role="button" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                        </div>                        
-                        <div class="caption">
+                        </div>
+                     
+                            <div class="caption">
                             <p>Planes Prepago</p>
                             <p>REALLY MOBILE  ofrece las mejores ofertas en planes prepago, minutos a todo operador e internet con la mejor velocidad.</p>
                         </div>
@@ -258,6 +261,7 @@ function pasarplan11(plan) {
                     <div class="modal-body">
                         <div id="slidermodalTelevisionDigital" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
+                            
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
                                     <div class="thumbnail" data-dismiss="modal" onclick="hdTotal('HD_Total')" data-toggle="modal" data-target="#myModalformulariodeplan">
