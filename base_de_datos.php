@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <meta name="google-site-verification" content="GPAWYETRMmFEP6Rg9euSV1XUYXkI2MC_ZumHrmB2khc" />
@@ -14,20 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
-    <style>
-body
-.caja{
-    /* background-color: blue; */
-    margin-bottom: 100px ;
-    margin-top: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
-    border: solid black 2px;
-    border-radius: 15px;
-    /* width: 300px; */
-    height: 400px;
-}
-</style>
+    
     
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -61,34 +47,28 @@ body
 
         <br>
         
+        <?php
+echo "<table class=' table table-dark' >";
+echo "<tr><th>Nombre</th><th>Telefono</th><th>Tipo Plan</th></tr>";
 
-<!-- Un agente te contactara pronto, recuerda que nuestro horario de atencion es de lunes a domingo entre las 7:00 am y 9:00 pm -->
-<?php
- 
-   $NumeroDeCelular = $_GET["Numero_de_celular"];
-   $Nombre = $_GET["Nombre"];
-   $TipoDePlan = $_GET["plan"];
-   
-//    print $Mensaje." <br>".$Nombre."<br> ".$Correo_electronico;
-   ?> 
-    <div class="caja">
-        <section><center >
-           <center><h1>SOLICITUD ENVIADA</h1></center>
-           <h2>Señor<?php
-           print " ".$Nombre;
-           ?></h2>
-           <h3>Un agente te contactara pronto, llamandote al numero de celular <strong><?php
-          print $NumeroDeCelular; 
-           ?></strong></h3>
-           <h3>recuerda que nuestro horario de atencion es de lunes a domingo entre las 7:00 am y 9:00 pm<strong><?php
-         
-           ?></strong></h3> </center> 
-               <a href="base_de_datos.php"><button class ="btn btn-primary" style="color:white;"> INGRESAR BASE DE DATOS
-           </button></a>
-               
-      
-    </div>
-  <?php
+class TableRows extends RecursiveIteratorIterator {
+    function __construct($it) {
+        parent::__construct($it, self::LEAVES_ONLY);
+    }
+
+    function current() {
+        return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+    }
+
+    function beginChildren() {
+        echo "<tr>";
+    }
+
+    function endChildren() {
+        echo "</tr>" . "\n";
+    }
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -96,24 +76,22 @@ $dbname = "readymobile";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO cliente (Nombre,Telefono_Celular,Producto_interes)
-    VALUES ('$Nombre','$NumeroDeCelular','$TipoDePlan')";
+    $stmt = $conn->prepare("SELECT Nombre, Telefono_Celular, Producto_interes FROM cliente");
+    $stmt->execute();
 
-    // use exec() because no results are returned
-    $conn->exec($sql);
-    echo "New record created successfully";
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+        echo $v;
     }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
-
+}
+catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
 $conn = null;
-?>   
-    
-</main>
-<footer></footer>
+echo "</table>";
+?>
+
 </body>
 </html>

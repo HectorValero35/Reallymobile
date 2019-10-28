@@ -12,8 +12,95 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="plan.js"></script>
+    <!-- <script src="plan.js"></script> -->
+   <script>
+  
+  function pasarplan(plan) {
+    var tipoPlan = plan;
+       document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan1(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+
+  function hdTotal(plan)
+ {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+
+}
+
+
+
+function pasarplan3(plan)
+ {
+    var tipoPlan = plan;
+  
+       document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan4(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan5(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+function pasarplan6(plan) {
+    var tipoPlan = plan;
+  
+       document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan7(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan8(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+function pasarplan9(plan) {
+    var tipoPlan = plan;
+  
+       document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan10(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+
+
+function pasarplan11(plan) {
+    var tipoPlan = plan;
+    document.getElementById('plan').value=tipoPlan;
+}
+
+
    
+   </script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
 
@@ -45,41 +132,41 @@
     <!-- Container (Portfolio Section) -->
     <div id="Planes" class="container-fluid text-center bg-grey">
         <h2>Planes y Promociones</h2><br>
-        <div class="row text-center slideanim">
+        <div >
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalPlanesPrepago">       
                     <img src="img/imagen-22.jpg" alt="Planes Prepago" width="300" height="300">
-                    <p><strong>Planes Prepago "500Mb Gratis "Ingresar"</strong></p>
+                    <p><strong>Planes Prepago "500Mb Gratis "Conozca más aquí"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalTelevisionDigital" >
                     <img src="img/imagen-23.jpg" alt="Television Digital" width="300" height="300">
-                    <p><strong>Television Digital "2 Meses Gratis"</strong></p>
+                    <p><strong>Television Digital "2 Meses Gratis" "Conozca más aquí"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalInternetHogar">
                     <img src="img/imagen-26.jpg" alt="Internet Hogar" width="300" height="300">
-                    <p><strong>Planes Internet Hogar "Duplica tus Megas"</strong></p>
+                    <p><strong>Planes Internet Hogar "Duplica tus Megas" "Conozca más aquí"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalSolucionMovil">
                     <img src="img/imagen-29.jpg" alt="Solucion Movil" width="300" height="300">
-                    <p><strong>Solucion Movil para su Empresa "Conozca Mas"</strong></p>
+                    <p><strong>Solucion Movil para su Empresa "Conozca más aquí" </strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalSeguridadEmpresarial">
                     <img src="img/imagen-32.jpg" alt="Seguridad Empresarial" width="300" height="300">
-                    <p><strong>Seguridad Empresarial</strong></p>
+                    <p><strong>Seguridad Empresarial "Conozca más aquí"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalCloud">
                     <img src="img/imagen-35.png" alt="Cloud" width="300" height="300">
-                    <p><strong>Cloud</strong></p>
+                    <p><strong>Cloud "Conozca más aquí"</strong></p>
                 </div>
             </div>
             
@@ -98,9 +185,9 @@
                             <!-- Wrapper for slides -->
                          <form action="Consultaplan.php" method="get">
                              <label for="">Déjanos tus datos para contactarte</label>
-                             <input type="text" class="form-control" value="" placeholder="Ingresa tu numero celular" name="Numero_de_celular">
-                             <input type="text" class="form-control" value="" placeholder="Ingresa tu Nombre" name="Nombre">
-                             <input type="text" class="form-control" value="" id="plan"  name="plan" disabled name="Tipo_de_plan">
+                             <input type="text" required class="form-control" value="" placeholder="Ingresa tu numero celular" name="Numero_de_celular">
+                             <input type="text" required class="form-control" value="" placeholder="Ingresa tu Nombre" name="Nombre">
+                             <input type="text" required class="form-control" value=""  id="plan" name="plan"   >
                              
                              <br>
                              <input  type="submit" value="Enviar" class= "btn btn-primary form-control" style="border-radius: 10px " >
@@ -128,13 +215,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div onclick="pasarplan('planUno')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
-                                        <img src="img/imagen-20.0.png"  style="height:70% !important;" alt="Planes Prepago">
+                                    <div data-dismiss="modal" onclick="pasarplan('Plan_2GB_Internet')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-41.jpg"  style="height:70% !important;" alt="Planes Prepago">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div   class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
-                                        <img src="img/imagen-21.jpg" alt="Planes Prepago">
+                                    <div data-dismiss="modal" onclick="pasarplan1('Plan_1.1GB_Internet')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-44.jpg" alt="Planes Prepago">
                                     </div>
                                 </div>
                             </div>
@@ -173,13 +260,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div onclick="pasarplan2('planTres')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
-                                        <img src="img/imagen-24.jpg" style="height:70% !important;" alt="Television Digital">
+                                    <div class="thumbnail" data-dismiss="modal" onclick="hdTotal('HD_Total')" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-45.jpg" style="height:70% !important;" alt="Television Digital">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
-                                        <img src="img/imagen 25.jpg" alt="Television Digital">
+                                    <div data-dismiss="modal" onclick="pasarplan3('HD_Plus')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-46.jpg" alt="Television Digital">
                                     </div>
                                 </div>
                             </div>
@@ -218,13 +305,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-27.png" style="height:70% !important;" alt="Internet Hogar">
+                                    <div data-dismiss="modal" onclick="pasarplan4('30_Megas')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-47.jpg" style="height:70% !important;" alt="Internet Hogar">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imgen-28.jpg" alt="INTERNET HOGAR">
+                                    <div data-dismiss="modal" onclick="pasarplan5('50_Megas')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-48.jpg" style="height:70% !important;" alt="Internet Hogar">
                                     </div>
                                 </div>
                             </div>
@@ -263,13 +350,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-30.jpg" style="height:70% !important;" alt="Solucion Movil para su Empresa">
+                                    <div data-dismiss="modal" onclick="pasarplan6('Solucion_Movil')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-50.jpg" style="height:70% !important;" alt="Solucion Movil para su Empresa">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-31.jpg" alt="Solucion Movil para su Empresa">
+                                    <div data-dismiss="modal" onclick="pasarplan7('Apps')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-49.jpg" alt="Solucion Movil para su Empresa">
                                     </div>
                                 </div>
                             </div>
@@ -308,13 +395,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-33.jpg" style="height:70% !important;" alt="Seguridad Empresarial">
+                                    <div data-dismiss="modal" onclick="pasarplan8('Redes_Dispositivos')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-51.jpg" style="height:70% !important;" alt="Seguridad Empresarial">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-34.jpg" alt="Seguridad Empresarial">
+                                    <div data-dismiss="modal" onclick="pasarplan9('Ciberseguridad')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-52.jpg" alt="Seguridad Empresarial">
                                     </div>
                                 </div>
                             </div>
@@ -353,14 +440,14 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-36.jpg" style="height:70% !important;" alt="Cloud">
+                                    <div data-dismiss="modal" onclick="pasarplan10('SAAS')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-53.jpg" style="height:70% !important;" alt="Cloud">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-37.jpg" alt="Cloud">
+                                    <div data-dismiss="modal" onclick="pasarplan11('IAAS')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-54.jpg" alt="Cloud">
                                     </div>
                                 </div>
                             </div>
@@ -385,102 +472,6 @@
                 </div>
             </div>
         </div>
-
-
-        <div id="myModalPaquetesyRecargas" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content" style="margin:10%;">
-                    <div class="modal-header" style="border:none;">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="slidermodalPaquetesyRecargas" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-14.0.jpg" style="height:70% !important;" alt="PAQUETES Y RECARGAS">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-14.0.jpg" alt="PAQUETES Y RECARGAS">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#slidermodalPaquetesyRecargas" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#slidermodalPaquetesyRecargas" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <div class="caption">
-                            <p>PAQUETES Y RECARGAS</p>
-                            <p>REALLY MOBILE brinda diversos planes y recargas para que no te desconectes nunca, todo a tu disponibilidad y presupuesto.</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="myModalInternetEmpresas" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content" style="margin:10%;">
-                    <div class="modal-header" style="border:none;">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="slidermodalInternetEmpresas" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-15.0.png" style="height:70% !important;" alt="INTERNET EMPRESAS">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-15.0.png" alt="INTERNET EMPRESAS">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="thumbnail">
-                                        <img src="img/imagen-15.0.png" alt="INTERNET EMPRESAS">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#slidermodalInternetEmpresas" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#slidermodalInternetEmpresas" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <div class="caption">
-                            <p>INTERNET EMPRESAS</p>
-                            <p>REALLY MOBILE brinda la mejor velocidad y cobertura para su empresa garantizando su conectividad con el mundo.</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
 
         <!-- Modal -->
@@ -552,35 +543,35 @@ $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    // if (this.hash !== "") {
+    //   // Prevent default anchor click behavior
+    //   event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+    //   // Store hash
+    //   var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+    //   // Using jQuery's animate() method to add smooth page scroll
+    //   // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    //   $('html, body').animate({
+    //     scrollTop: $(hash).offset().top
+    //   }, 001, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+    //     // Add hash (#) to URL when done scrolling (default click behavior)
+    //     window.location.hash = hash;
+    //   });
+    // } // End if
   });
 
-   $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+//    $(window).scroll(function() {
+//     $(".slideanim").each(function(){
+//       var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 0) {
-          $(this).addClass("slide");
-        }
-    });
-  });
+//       var winTop = $(window).scrollTop();
+//         if (pos < winTop + 0) {
+//           $(this).addClass("slide");
+//         }
+//     });
+//   });
 })
     </script>
 

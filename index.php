@@ -747,10 +747,10 @@
             <form action="envio.php" method="get"><div class="col-sm-7 slideanim">
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+                        <input required class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
                     </div>
                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Correo" type="email" required>
+                        <input  required class="form-control" id="email" name="email" placeholder="Correo" type="email" required>
                     </div>
                 </div>
                 <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea><br>

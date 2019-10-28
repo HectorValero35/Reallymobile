@@ -45,7 +45,7 @@
     <!-- Container (Portfolio Section) -->
     <div id="portfolio" class="container-fluid text-center bg-grey">
         <h2>Portafolio</h2><br>
-        <div class="row text-center slideanim">
+        <div >
             <div class="col-sm-4">
                 <div class="thumbnail" data-toggle="modal" data-target="#myModalSmartphones">       
                     <img src="img/imagen-2.jpg" alt="Smartphones" width="300" height="300">

@@ -33,6 +33,7 @@
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="Portafolio.php">Portafolio</a></li>
                     <li><a href="Planes.php">Planes y Promociones</a></li>
+                   
                     
                 </ul>
             </div>
@@ -45,7 +46,7 @@
     <!-- Container (Services Section) -->
     <div id="services" class="container-fluid text-center">
         <h2>SERVICIOS</h2>
-        <div class="row slideanim">
+        <div>
             <div class="col-sm-4">
                 <span ><img style="width:300px !important;height:300px !important" src="img/imagen-2.jpg" /></span>
                 <h4>Smartphones</h4>
