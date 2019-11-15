@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <meta name="google-site-verification" content="GPAWYETRMmFEP6Rg9euSV1XUYXkI2MC_ZumHrmB2khc" />
+
 <head>
     <title>REALLY MOBILE</title>
     <!--<meta charset="utf-8">-->
@@ -13,95 +14,90 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- <script src="plan.js"></script> -->
-   <script>
-  
-  function pasarplan(plan) {
-    var tipoPlan = plan;
-       document.getElementById('plan').value=tipoPlan;
-}
+    <script>
+        function pasarplan(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan1(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan1(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
-  function hdTotal(plan)
- {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
+        function hdTotal(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
 
-}
-
-
-
-function pasarplan3(plan)
- {
-    var tipoPlan = plan;
-  
-       document.getElementById('plan').value=tipoPlan;
-}
+        }
 
 
 
-function pasarplan4(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan3(plan) {
+            var tipoPlan = plan;
+
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan5(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
-
-function pasarplan6(plan) {
-    var tipoPlan = plan;
-  
-       document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan4(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan7(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan5(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
+
+        function pasarplan6(plan) {
+            var tipoPlan = plan;
+
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan8(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
-
-function pasarplan9(plan) {
-    var tipoPlan = plan;
-  
-       document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan7(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan10(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan8(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
+
+        function pasarplan9(plan) {
+            var tipoPlan = plan;
+
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
 
-function pasarplan11(plan) {
-    var tipoPlan = plan;
-    document.getElementById('plan').value=tipoPlan;
-}
+        function pasarplan10(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
 
 
-   
-   </script>
+
+        function pasarplan11(plan) {
+            var tipoPlan = plan;
+            document.getElementById('plan').value = tipoPlan;
+        }
+    </script>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -120,27 +116,27 @@ function pasarplan11(plan) {
                     <li><a href="Servicio.php">Servicios</a></li>
                     <li><a href="Portafolio.php">Portafolio</a></li>
                     <li><a href="#Planes.php">Planes y Promociones</a></li>
-                    
-                    
+
+
                 </ul>
             </div>
         </div>
     </nav>
 
-          
-    
+
+
     <!-- Container (Portfolio Section) -->
     <div id="Planes" class="container-fluid text-center bg-grey">
         <h2>Planes y Promociones</h2><br>
-        <div >
+        <div>
             <div class="col-sm-4">
-                <div class="thumbnail" data-toggle="modal" data-target="#myModalPlanesPrepago">       
+                <div class="thumbnail" data-toggle="modal" data-target="#myModalPlanesPrepago">
                     <img src="img/imagen-22.jpg" alt="Planes Prepago" width="300" height="300">
                     <p><strong>Planes Prepago "500Mb Gratis "Conozca más aquí"</strong></p>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="thumbnail" data-toggle="modal" data-target="#myModalTelevisionDigital" >
+                <div class="thumbnail" data-toggle="modal" data-target="#myModalTelevisionDigital">
                     <img src="img/imagen-23.jpg" alt="Television Digital" width="300" height="300">
                     <p><strong>Television Digital "2 Meses Gratis" "Conozca más aquí"</strong></p>
                 </div>
@@ -169,40 +165,47 @@ function pasarplan11(plan) {
                     <p><strong>Cloud "Conozca más aquí"</strong></p>
                 </div>
             </div>
-            
+
 
         </div><br>
         <!-- es para el formulario -->
-<div class="modal fade" id="myModalformulariodeplan">
-<div class="modal-dialog modal-lg">
+        <div class="modal fade" id="myModalformulariodeplan">
+            <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content" style="margin:10%;">
                     <div class="modal-header" style="border:none;">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <div id="slidermodal"  class="carousel slide" data-ride="carousel">
+                        <div id="slidermodal" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
-                         <form action="Consultaplan.php" method="get">
-                             <label for="">Déjanos tus datos para contactarte</label>
-                             <input type="text" required class="form-control" value="" placeholder="Ingresa tu numero celular" name="Numero_de_celular">
-                             <input type="text" required class="form-control" value="" placeholder="Ingresa tu Nombre" name="Nombre">
-                             <input type="text" required class="form-control" value=""  id="plan" name="plan"   >
-                             
-                             <br>
-                             <input  type="submit" value="Enviar" class= "btn btn-primary form-control" style="border-radius: 10px " >
-                         </form>   
-                        </div>                        
+                            <form action="Consultaplan.php" method="get">
+                                <label for="">Déjanos tus datos para contactarte</label>
+                                <select name="Tipo_Identificacion" id="" required class="form-control">
+                                    <option value="Cedula_Ciudadania">Cedula_Ciudadania</option>
+                                    <option value="Nit">Nit</option>
+                                    <option value="Cedula_Extranjeria">Cedula_Extranjeria</option>
+                                    <option value="Tarjeta_Identidad">Tarjeta_Identidad</option>
+                                </select>
+                                <input type="text" required class="form-control" value="" placeholder="Ingresa tu numero de identificación" name="Numero_de_cedula_o_Nit">
+                                <input type="text" required class="form-control" value="" placeholder="Ingresa tu numero celular" name="Numero_de_celular">
+                                <input type="text" required class="form-control" value="" placeholder="Ingresa tu Nombre" name="Nombre">
+                                <input type="text" required class="form-control" value="" id="plan" name="plan">
+
+                                <br>
+                                <input type="submit" value="Enviar" class="btn btn-primary form-control" style="border-radius: 10px ">
+                            </form>
+                        </div>
                         <div class="caption">
-                             </div>
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
 
-</div>
+        </div>
 
-<div id="myModalPlanesPrepago" class="modal fade" role="dialog" >
+        <div id="myModalPlanesPrepago" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
                 <div class="modal-content" style="margin:10%;">
@@ -212,11 +215,11 @@ function pasarplan11(plan) {
                     <div class="modal-body">
                         <div id="slidermodalTelevisionDigital" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
-                            
+
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div data-dismiss="modal" onclick="pasarplan('Plan_2GB_Internet')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
-                                        <img src="img/imagen-41.jpg"  style="height:70% !important;" alt="Planes Prepago">
+                                    <div data-dismiss="modal" onclick="pasarplan('Plan_2GB_Internet')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                        <img src="img/imagen-41.jpg" style="height:70% !important;" alt="Planes Prepago">
                                     </div>
                                 </div>
                                 <div class="item">
@@ -237,10 +240,10 @@ function pasarplan11(plan) {
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                     
-                            <div class="caption">
+
+                        <div class="caption">
                             <p>Planes Prepago</p>
-                            <p>REALLY MOBILE  ofrece las mejores ofertas en planes prepago, minutos a todo operador e internet con la mejor velocidad.</p>
+                            <p>REALLY MOBILE ofrece las mejores ofertas en planes prepago, minutos a todo operador e internet con la mejor velocidad.</p>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -261,7 +264,7 @@ function pasarplan11(plan) {
                     <div class="modal-body">
                         <div id="slidermodalTelevisionDigital" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
-                            
+
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
                                     <div class="thumbnail" data-dismiss="modal" onclick="hdTotal('HD_Total')" data-toggle="modal" data-target="#myModalformulariodeplan">
@@ -309,12 +312,12 @@ function pasarplan11(plan) {
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div data-dismiss="modal" onclick="pasarplan4('30_Megas')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan4('30_Megas')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-47.jpg" style="height:70% !important;" alt="Internet Hogar">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div data-dismiss="modal" onclick="pasarplan5('50_Megas')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan5('50_Megas')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-48.jpg" style="height:70% !important;" alt="Internet Hogar">
                                     </div>
                                 </div>
@@ -341,7 +344,7 @@ function pasarplan11(plan) {
             </div>
         </div>
 
-        
+
         <div id="myModalSolucionMovil" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <!-- Modal content-->
@@ -354,12 +357,12 @@ function pasarplan11(plan) {
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div data-dismiss="modal" onclick="pasarplan6('Solucion_Movil')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan6('Solucion_Movil')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-50.jpg" style="height:70% !important;" alt="Solucion Movil para su Empresa">
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div data-dismiss="modal" onclick="pasarplan7('Apps')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan7('Apps')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-49.jpg" alt="Solucion Movil para su Empresa">
                                     </div>
                                 </div>
@@ -373,7 +376,7 @@ function pasarplan11(plan) {
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                         </div>
+                        </div>
                         <div class="caption">
                             <p>Solucion Movil para su Empresa</p>
                             <p>REALLY MOBILE brinda las mejores alternativas de comunicaci&oacuten para su empresa, apps ilimitadas, seguridad movil empresarial, roaming internacional y mucho mas. Por este mes reciba el doble de gigas y minutos ilimitados a todo operador en Colombia y todo Suramerica .</p>
@@ -404,7 +407,7 @@ function pasarplan11(plan) {
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div data-dismiss="modal" onclick="pasarplan9('Ciberseguridad')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan9('Ciberseguridad')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-52.jpg" alt="Seguridad Empresarial">
                                     </div>
                                 </div>
@@ -444,13 +447,13 @@ function pasarplan11(plan) {
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <div data-dismiss="modal" onclick="pasarplan10('SAAS')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan10('SAAS')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-53.jpg" style="height:70% !important;" alt="Cloud">
                                     </div>
                                 </div>
-                                
+
                                 <div class="item">
-                                    <div data-dismiss="modal" onclick="pasarplan11('IAAS')"  class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
+                                    <div data-dismiss="modal" onclick="pasarplan11('IAAS')" class="thumbnail" data-toggle="modal" data-target="#myModalformulariodeplan">
                                         <img src="img/imagen-54.jpg" alt="Cloud">
                                     </div>
                                 </div>
@@ -490,9 +493,9 @@ function pasarplan11(plan) {
                     </div>
                     <div class="modal-body">
 
-                           <div id="slidermodal" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!--<ol class="carousel-indicators">
+                        <div id="slidermodal" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <!--<ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -502,20 +505,20 @@ function pasarplan11(plan) {
                     <li data-target="#myCarousel" data-slide-to="6"></li>
                 </ol>-->
 
-                
 
-               
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#slidermodal" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#slidermodal" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#slidermodal" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#slidermodal" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
 
                         <!--<img src="img/niquel1_photo.jpg"  style="border:none;"  class="img-thumbnail" alt="Cinque Terre">
                         <div style="text-align:left" class="caption">
@@ -532,52 +535,53 @@ function pasarplan11(plan) {
 
 
 
-        
+
     </div>
 
 
     <!-- Add Google Maps -->
     <div id="googleMap" style="height:400px;width:100%;"></div>
-    
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPzVUOhD92QFxMpXDW0TUwtE4i-GpXzSc&callback=myMap"></script>
-    
+
 
     <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    // if (this.hash !== "") {
-    //   // Prevent default anchor click behavior
-    //   event.preventDefault();
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                // if (this.hash !== "") {
+                //   // Prevent default anchor click behavior
+                //   event.preventDefault();
 
-    //   // Store hash
-    //   var hash = this.hash;
+                //   // Store hash
+                //   var hash = this.hash;
 
-    //   // Using jQuery's animate() method to add smooth page scroll
-    //   // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    //   $('html, body').animate({
-    //     scrollTop: $(hash).offset().top
-    //   }, 001, function(){
+                //   // Using jQuery's animate() method to add smooth page scroll
+                //   // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                //   $('html, body').animate({
+                //     scrollTop: $(hash).offset().top
+                //   }, 001, function(){
 
-    //     // Add hash (#) to URL when done scrolling (default click behavior)
-    //     window.location.hash = hash;
-    //   });
-    // } // End if
-  });
+                //     // Add hash (#) to URL when done scrolling (default click behavior)
+                //     window.location.hash = hash;
+                //   });
+                // } // End if
+            });
 
-//    $(window).scroll(function() {
-//     $(".slideanim").each(function(){
-//       var pos = $(this).offset().top;
+            //    $(window).scroll(function() {
+            //     $(".slideanim").each(function(){
+            //       var pos = $(this).offset().top;
 
-//       var winTop = $(window).scrollTop();
-//         if (pos < winTop + 0) {
-//           $(this).addClass("slide");
-//         }
-//     });
-//   });
-})
+            //       var winTop = $(window).scrollTop();
+            //         if (pos < winTop + 0) {
+            //           $(this).addClass("slide");
+            //         }
+            //     });
+            //   });
+        })
     </script>
 
 </body>
+
 </html>

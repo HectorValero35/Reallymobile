@@ -1,6 +1,3 @@
-<?php include "Conexion_base_datos.php"
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <meta name="google-site-verification" content="GPAWYETRMmFEP6Rg9euSV1XUYXkI2MC_ZumHrmB2khc" />
@@ -16,6 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
+    <style>
+        table,th,td,tr{
+            border: 3px solid black;
+        }
+        </style>
     
     
 </head>
@@ -49,18 +51,18 @@
         <br>
 
         <br>
-        <style>
-        table,th,td,tr{
-            border: 3px solid black;
-        }
-        </style>
+
+
         <?php
-        $sql="SELECT * FROM cliente";
-        $resultado=$conn->query($sql);
-        ?>
-        
-      <table class="table table-dark" style="border: 1px solid black;">
-        <tr>
+
+include "Conexion_base_datos.php";
+$id=$_GET["id"];
+$sql="SELECT * FROM cliente WHERE ID=".$id."";
+$resultado=$conn->query($sql);
+?>
+<form action="modificar.php" method="get">
+<table>
+<tr>
             <th>Id</th>
             <th>Tipo Identificación</th>
             <th>Numero de Identificación</th>
@@ -70,35 +72,27 @@
             
             
         </tr>
-
-        <?php if ($resultado->num_rows > 0) {
-    
-    while($row = $resultado->fetch_assoc()) {
-        ?>
-            <tr>
-            <td><?php echo $row["ID"] ?></td>
-            <td><?php echo $row["Tipo_Identificacion"] ?></td>
-            <td><?php echo $row["Numero_Identificacion"] ?></td>
-            <td><?php echo $row["Nombre"] ?></td>
-            <td><?php echo $row["Telefono_Celular"] ?></td>
-            <td><?php echo $row["Producto_interes"] ?></td>
-            <td><a href="editar.php?id=<?php echo $row['ID'] ?>"><button class="btn btn-primary">modificar</button></a></td>
-            <td><a href="#"> <button class="btn btn-danger" onclick="alerta(<?php echo $row['ID'] ?>)">eliminar</button></a></td>
-            <!-- <td><a href="eliminar.php?id=<?php echo $row['ID'] ?>"> <button class="btn btn-danger" onclick="alerta( )">eliminar</button></a></td> -->
-
-    <?php            
-        }
-    } else {
-        echo "0 results";
-    }mysqli_close($conn);?>
-    </table>
-</body>
-<script>
-function alerta(id) {
-    if(confirm("¿estas seguro que deseas eliminar el registro?"))
-    {
-        window.location.href="eliminar.php?id="+id;
-    }
+<?php 
+if ($resultado->num_rows > 0) {
+while($row = $resultado->fetch_assoc()) {
+?>
+    <tr>
+    <td><input type="text" name="ID" value="<?php echo $row['ID'] ?>"></td>
+    <th><input type="text" name="Tipo_Identificacion" value="<?php echo $row['Tipo_Identificacion'] ?>"></th>
+    <th><input type="text" name="Numero_Identificacion" value="<?php echo $row['Numero_Identificacion'] ?>"></th>
+    <td><input type="text" name="Nombre" value="<?php echo $row['Nombre'] ?>"></td>
+    <th><input type="text" name="Telefono_Celular" value="<?php echo $row['Telefono_Celular'] ?>"></th>
+    <th><input type="text" name="Producto_interes" value="<?php echo $row['Producto_interes'] ?>"></th>
+    <th><input type="submit" class="btn btn-submit"  value="enviar"></th>
+</tr>
+</form>
+<?php            
 }
-</script>
+} else {
+echo "0 results";
+}mysqli_close($conn);
+?>
+</table>
+    </main>
+</body>
 </html>

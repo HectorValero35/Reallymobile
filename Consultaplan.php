@@ -68,7 +68,8 @@ body
    $NumeroDeCelular = $_GET["Numero_de_celular"];
    $Nombre = $_GET["Nombre"];
    $TipoDePlan = $_GET["plan"];
-   
+   $Numero_Identificacion=$_GET["Numero_de_cedula_o_Nit"];
+   $Tipo_Identificacion=$_GET["Tipo_Identificacion"];
 //    print $Mensaje." <br>".$Nombre."<br> ".$Correo_electronico;
    ?> 
     <div class="caja">
@@ -98,8 +99,8 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO cliente (Nombre,Telefono_Celular,Producto_interes)
-    VALUES ('$Nombre','$NumeroDeCelular','$TipoDePlan')";
+    $sql = "INSERT INTO cliente (Nombre,Numero_Identificacion,Producto_interes,Telefono_Celular,Tipo_Identificacion)
+    VALUES ('$Nombre','$Numero_Identificacion','$TipoDePlan','$NumeroDeCelular','$Tipo_Identificacion')";
 
     // use exec() because no results are returned
     $conn->exec($sql);
